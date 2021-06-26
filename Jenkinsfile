@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('CloneRepo') {
       steps {
-        git(url: 'https://github.com/Chaitralatha380/the-example-app.java.git', changelog: true, poll: true, branch: 'master')
+        git(url: 'https://github.com/Chaitralatha380/MavenDemo.git', changelog: true, poll: true, branch: 'master')
       }
     }
 
