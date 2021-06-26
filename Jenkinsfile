@@ -9,14 +9,14 @@ pipeline {
 
     stage('Compile') {
       steps {
-        sh '''mvn clean
-mvn compile'''
+        sh '''mvn -f simple-java-maven-app-master/pom.xml clean
+mvn -f simple-java-maven-app-master/pom.xml compile'''
       }
     }
 
     stage('Test') {
       steps {
-        sh 'mvn test'
+        sh 'mvn -f simple-java-maven-app-master/pom.xml test'
       }
     }
 
