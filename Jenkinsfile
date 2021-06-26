@@ -9,8 +9,7 @@ pipeline {
 
     stage('Compile') {
       steps {
-        sh '''mvn -f simple-java-maven-app-master/pom.xml clean
-mvn -f simple-java-maven-app-master/pom.xml compile'''
+        sh 'mvn -f simple-java-maven-app-master/pom.xml compile'
       }
     }
 
